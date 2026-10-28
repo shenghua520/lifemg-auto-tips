@@ -1,0 +1,20 @@
+{
+  "name": "lifemg-auto-tips",
+  "version": "1.0.0",
+  "private": true,
+  "description": "晨光联盟商城(lifemg.cn) PC 端自动化：条码搜商品 / 下载主图+轮播图+详情图 / 导出商品全量信息 Excel",
+  "scripts": {
+    "login": "node scripts/00-login-save-state.js",
+    "search": "node scripts/01-search-barcode.js",
+    "export": "node scripts/02-export-item.js",
+    "verify": "node scripts/03-verify-output.js",
+    "sniff": "node scripts/98-sniff-detail.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

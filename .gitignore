@@ -1,0 +1,18 @@
+# 依赖
+node_modules/
+package-lock.json
+
+# 凭证 / 登录态（绝不提交）
+config.local.js
+profile/
+
+# 抓取产物与本地数据
+output/
+backup/
+barcodes.txt
+
+# 杂项
+*.log
+.playwright-cli/
+.DS_Store
+Thumbs.db
